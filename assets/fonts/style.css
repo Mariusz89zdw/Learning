@@ -1,0 +1,241 @@
+
+:root{
+    --colorHover:#eee;
+}
+@font-face {
+    font-family:"Nonsans";
+    src: url("./Noto_Sans/NotoSans-Light.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nonsans";
+}
+button{
+     outline:none;
+     background: rgb(253, 251, 251); 
+     border-radius:50px;
+     padding:7px 20px ;
+     cursor: pointer;
+     border:1px solid var(--colorHover);
+     text-transform: uppercase;
+}
+button:hover{
+     background: var(--colorHover);
+}
+header{
+     width: 100vw;
+}
+.container-header{
+    width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,50%);
+}
+
+.header-text{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding:70px ;
+}
+.header-text h1{
+   text-align: left;
+   font-weight: normal;
+   width: 100%;
+}
+.header-text {
+    line-height: 30px;
+}
+.header-text p{
+    line-height: 30px;
+    width: 100%;
+    margin:30px 0;
+    text-align: left;
+}
+.header-img img{
+     width: 100%;
+     object-fit: cover;
+     height: 100%;
+}
+
+/* ******  style main  ******/
+main {
+    width: 100vw;
+}
+.container-main{
+    width: 100%;
+}
+
+.container-main-top{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.container-main-top img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.container-top-text{
+  padding: 0 50px ;
+  display: flex;
+  align-items: flex-start;
+  justify-content:center;
+  flex-direction:column;
+ 
+  }
+.container-top-text h2{
+    font-weight: normal;
+    margin:20px 0;
+  }
+.container-top-text p{
+   line-height:30px ;
+   margin:0 0 15px 0 ;
+   width: 100%;
+    
+  }
+.container-top-text p{
+   line-height:30px ;
+  }
+
+
+
+  .container-main-bottom{
+   display: grid;
+   grid-template-columns: 70% 30%;
+
+  }
+  .container-bottom-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding:70px;
+  }
+  .container-bottom-text  h2{
+     font-weight: bold;
+     margin:0 0 30px 0;  
+  }
+  .container-bottom-text  p{
+   line-height:30px;
+   margin: 0 0 20px 0   ;
+  }
+
+  .container-bottom-img img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+.main-formulaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 30px 0 ;
+    flex-direction:column;
+}
+.main-formulaire h2{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+form {
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+form .list-group{
+     display: grid;
+     grid-template-columns: repeat(2,49%);
+     width: 100%;
+     gap: 20px;
+}
+form .list-group p{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px ;
+}
+form input{
+   min-width: 100%;
+   outline: #eee;
+   border-radius:5px;
+   border: 1px solid #eee ;
+   text-align: center;
+   padding:5px;
+   box-shadow: 1px 1px 1px #eee;
+   margin:10px
+}
+
+form textarea {
+    min-width: 100%;
+   outline: #eee;
+   border-radius:5px;
+   border: 1px solid #eee ;
+   text-align: center;
+   margin:10px 0;
+   padding:5px;
+   box-shadow: 1px 1px 1px #eee;
+}
+
+footer{
+    width: 100vw;
+    position:relative;
+}
+.container-footer::before{
+    content:"";
+    position:absolute;
+    border:1px solid #eee;
+    width: 70%;
+    margin:0 auto;
+    top:0;
+
+}
+.container-footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px 
+}
+.container-footer .media{
+   margin:30px ;
+   border-radius:50%; 
+   padding:10px;
+   background: var(--colorBtn);
+   border:1px solid #eee;
+   box-shadow:0  rgb(109, 61, 61);
+}
+
+   /* *************    Responsive de la maqutte ****  */
+@media screen and (max-width: 700px){
+
+    .container-header{
+        display: block;
+     
+        
+    }
+    .header-text{
+        padding:30px ;
+    }
+    .container-main-top{
+        display: block;
+        padding:20px 0 ;
+    }
+    .container-top-img{
+        display: none;
+    }
+    .container-main-bottom{
+        display: block;
+    }
+    .container-main-bottom{
+        display: block;
+    }
+    .container-bottom-img{
+        display: none;
+    }
+}
+
+
